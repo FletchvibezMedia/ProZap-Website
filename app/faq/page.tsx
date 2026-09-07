@@ -1,0 +1,26 @@
+import {ArrowLeft,BatteryCharging,ChevronRight,Phone,Zap} from "lucide-react";
+
+export const metadata={title:"Mobile EV Charging FAQ | ProZap Central Florida",description:"Answers about emergency mobile EV charging, charging time, vehicle compatibility, service area, pricing, safety, and roadside service from ProZap."};
+
+const faqs=[
+ ["What is mobile EV charging?","Mobile EV charging brings charging equipment directly to a stranded electric vehicle. ProZap arrives in a purpose-built service van and provides a roadside battery boost so you can reach your destination or a permanent charging station without arranging a traditional tow."],
+ ["What electric vehicles can ProZap charge?","ProZap is designed to serve most major electric vehicle makes and models. Tell dispatch your vehicle year, make, model, and charging-port type so the correct equipment can be confirmed before the van is sent."],
+ ["How long does mobile charging take?","Charging time depends on the vehicle, its current battery level, charging conditions, and how much range you need. Dispatch can provide a more useful estimate after receiving your vehicle information and location."],
+ ["How much range will I receive?","The goal of an emergency charge is typically to add enough usable range to get you safely back on the road or to a nearby charging station. Available range varies by vehicle, battery condition, weather, and energy use."],
+ ["How much does a service call cost?","The current advertised service-call price is $139 and includes travel within the listed 30-mile service area. Additional distance or special service requirements may affect the final price, so confirm the total with dispatch."],
+ ["Where does ProZap provide roadside EV charging?","ProZap serves Central Florida within the current dispatch area. Send your address or GPS coordinates to confirm availability and estimated arrival time."],
+ ["Can you charge my EV at home or work?","Yes, mobile service may be available at homes, workplaces, parking lots, and other accessible locations—not only on the roadside. The vehicle must be parked somewhere the service van can reach safely."],
+ ["Is roadside charging safe?","The equipment is designed for mobile EV charging, but every location is evaluated for safe access. Tell dispatch about traffic, parking garages, gated entrances, damaged vehicles, standing water, or other hazards before service."],
+ ["Are ProZap technicians certified?","ProZap uses specialized mobile EV charging equipment and follows applicable equipment and roadside safety procedures. Ask dispatch for the company’s current training, certification, and insurance details before service."],
+ ["Do you operate 24 hours a day?","Hours and same-day availability can vary. Call or send a service request to confirm whether a charging van is available and receive an estimated arrival time."],
+ ["What information should I send to dispatch?","Include your exact location, vehicle year and model, remaining battery percentage, charging-port type if known, and any access instructions such as a gate code or parking-garage level."],
+ ["Can ProZap help fleets, dealerships, and businesses?","Mobile EV charging may also support fleets, dealerships, property managers, events, and businesses that need flexible charging assistance. Contact ProZap to discuss recurring or on-site service needs."]
+];
+
+export default function FAQPage(){return <main className="faqPage">
+ <header className="innerHeader"><a className="brand" href="/"><img src="/prozap-logo.png" alt="ProZap Mobile EV Charging"/></a><nav><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/faq">FAQ</a><a href="/instagram">Instagram</a><a href="/#request">Request help</a></nav><a className="call" href="tel:+14076862539"><Phone/>Call now</a></header>
+ <section className="faqIntro"><div><a className="back" href="/"><ArrowLeft/>Back to ProZap</a><div className="eyebrow">Mobile charging answers</div><h1>Questions before we charge?</h1><p>Start here. If your EV is already stranded, skip the reading assignment and call dispatch.</p></div><BatteryCharging className="faqBolt"/></section>
+ <section className="faqList">{faqs.map(([q,a],i)=><details key={q} open={i===0}><summary><span>{String(i+1).padStart(2,"0")}</span>{q}<ChevronRight/></summary><p>{a}</p></details>)}</section>
+ <section className="updatesCta"><div><div className="eyebrow">Still need an answer?</div><h2>Talk to an actual human.</h2></div><a className="button primary" href="tel:+14076862539"><Phone/>Call 407-686-2539</a></section>
+ <footer><a className="brand" href="/"><img src="/prozap-logo.png" alt="ProZap Mobile EV Charging"/></a><p>Mobile EV charging and roadside assistance serving Central Florida.</p><div><a href="/faq">FAQ</a><a href="tel:+14076862539">407-686-2539</a><a href="mailto:Prozap2025@gmail.com">Prozap2025@gmail.com</a><a href="/instagram">Instagram</a></div><small>© 2026 ProZap. Bringing power to the people.</small></footer>
+ </main>}

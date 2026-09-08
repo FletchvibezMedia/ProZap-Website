@@ -1,7 +1,7 @@
 import type {Metadata} from "next";
 import {ArrowLeft,BatteryCharging,ChevronRight,Phone,Zap} from "lucide-react";
 
-export const metadata:Metadata={title:"Mobile EV Charging FAQ | Central Florida",description:"Answers about emergency mobile EV charging, charging time, vehicle compatibility, service area, pricing, safety, and roadside service from ProZap.",alternates:{canonical:"/faq"},openGraph:{url:"/faq"}};
+export const metadata:Metadata={title:"Mobile EV Charging FAQ | Orlando & Central Florida",description:"Answers about emergency EV charging, Tesla compatibility, charging time, roadside pricing, safety and ProZap's Orlando service area.",alternates:{canonical:"/faq"},openGraph:{title:"Mobile EV Charging FAQ | ProZap",description:"Straight answers about roadside EV charging, compatibility, cost and coverage in Central Florida.",url:"/faq"}};
 
 const faqs=[
  ["What is mobile EV charging?","Mobile EV charging brings charging equipment directly to a stranded electric vehicle. ProZap arrives in a purpose-built service van and provides a roadside battery boost so you can reach your destination or a permanent charging station without arranging a traditional tow."],
@@ -19,10 +19,14 @@ const faqs=[
  ["Can ProZap help fleets, dealerships, and businesses?","Mobile EV charging may also support fleets, dealerships, property managers, events, and businesses that need flexible charging assistance. Contact ProZap to discuss recurring or on-site service needs."]
 ];
 
+const faqSchema={"@context":"https://schema.org","@type":"FAQPage",mainEntity:faqs.map(([name,text])=>({"@type":"Question",name,acceptedAnswer:{"@type":"Answer",text}}))};
+const breadcrumbSchema={"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:"https://prozapev.com"},{"@type":"ListItem",position:2,name:"Mobile EV Charging FAQ",item:"https://prozapev.com/faq"}]};
+
 export default function FAQPage(){return <main className="faqPage">
- <header className="innerHeader"><a className="brand" href="/"><img src="/prozap-logo.png" alt="ProZap Mobile EV Charging"/></a><nav><a href="/#how">How it works</a><a href="/pricing">Pricing</a><a href="/faq">FAQ</a><a href="/instagram">Instagram</a><a href="/#request">Request help</a></nav><a className="call" href="tel:+14076862539"><Phone/>Call now</a></header>
+ <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqSchema)}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbSchema)}}/>
+ <header className="innerHeader"><a className="brand" href="/"><img width={1859} height={546} src="/prozap-logo-transparent.webp" alt="ProZap Mobile EV Charging"/></a><nav><a href="/mobile-ev-charging-orlando">Service area</a><a href="/pricing">Pricing</a><a href="/faq">FAQ</a><a href="/instagram">Updates</a><a href="/#request">Request help</a></nav><a className="call" href="tel:+14076862539"><Phone/>Call now</a></header>
  <section className="faqIntro"><div><a className="back" href="/"><ArrowLeft/>Back to ProZap</a><div className="eyebrow">Mobile charging answers</div><h1>Questions before we charge?</h1><p>Start here. If your EV is already stranded, skip the reading assignment and call dispatch.</p></div><BatteryCharging className="faqBolt"/></section>
  <section className="faqList">{faqs.map(([q,a],i)=><details key={q} open={i===0}><summary><span>{String(i+1).padStart(2,"0")}</span>{q}<ChevronRight/></summary><p>{a}</p></details>)}</section>
  <section className="updatesCta"><div><div className="eyebrow">Still need an answer?</div><h2>Talk to an actual human.</h2></div><a className="button primary" href="tel:+14076862539"><Phone/>Call 407-686-2539</a></section>
- <footer><a className="brand" href="/"><img src="/prozap-logo.png" alt="ProZap Mobile EV Charging"/></a><p>Mobile EV charging and roadside assistance serving Central Florida.</p><div><a href="/pricing">Pricing</a><a href="tel:+14076862539">407-686-2539</a><a href="mailto:Prozap2025@gmail.com">Prozap2025@gmail.com</a><a href="https://www.instagram.com/prozap25/" target="_blank" rel="noreferrer">Instagram</a><a href="https://www.tiktok.com/@prozap42" target="_blank" rel="noreferrer">TikTok</a><a href="https://www.facebook.com/prozap25" target="_blank" rel="noreferrer">Facebook</a></div><small>© 2026 ProZap. Bringing power to the people.</small></footer>
+ <footer><a className="brand" href="/"><img width={1859} height={546} src="/prozap-logo-transparent.webp" alt="ProZap Mobile EV Charging"/></a><p>Mobile EV charging and roadside assistance serving Central Florida.</p><div><a href="/mobile-ev-charging-orlando">Service area</a><a href="/pricing">Pricing</a><a href="tel:+14076862539">407-686-2539</a><a href="mailto:Prozap2025@gmail.com">Prozap2025@gmail.com</a><a href="https://www.instagram.com/prozap25/" target="_blank" rel="noreferrer">Instagram</a><a href="https://www.tiktok.com/@prozap42" target="_blank" rel="noreferrer">TikTok</a><a href="https://www.facebook.com/prozap25" target="_blank" rel="noreferrer">Facebook</a></div><small>© 2026 ProZap. Bringing power to the people.</small></footer>
  </main>}

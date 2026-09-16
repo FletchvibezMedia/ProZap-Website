@@ -337,7 +337,7 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
   filter:drop-shadow(0 16px 25px rgba(0,0,0,.65)) drop-shadow(0 0 20px rgba(201,255,19,.09));
 }
 .heroPhotoMobile{display:none}
-.heroPhotoDesktop{display:block;position:absolute;z-index:0;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.heroPhotoDesktop{display:block;position:absolute;z-index:0;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center}
 .heroCopy{z-index:3;width:43vw;max-width:690px}
 .status:after{content:"";display:block;width:72px;height:1px;margin-left:2px;background:var(--acid)}
 .hero h1{font-size:clamp(4.7rem,6.65vw,7.25rem);line-height:.84;max-width:690px}

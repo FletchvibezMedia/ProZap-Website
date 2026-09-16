@@ -156,7 +156,7 @@ header .call{
   min-height:760px;
   height:min(94vh,920px);
   padding:138px max(6vw,24px) 88px;
-  background-image:url('/prozap-fleet-banner.webp');
+  background-image:url('/prozap-hero-clean.png');
   background-size:cover;
   background-position:62% center;
   border-bottom:1px solid rgba(199,255,26,.32);
@@ -321,17 +321,6 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
   clip-path:polygon(0 0,100% 0,100% 100%,93% 100%,88% 92%,12% 92%,6% 100%,0 100%);
   box-shadow:inset 28px 0 55px rgba(201,255,19,.035),inset -28px 0 55px rgba(201,255,19,.025);
 }
-.hero:after{
-  content:"";
-  position:absolute;
-  z-index:1;
-  left:22%;
-  top:84px;
-  width:20%;
-  height:190px;
-  pointer-events:none;
-  background:linear-gradient(90deg,transparent,rgba(2,5,6,.92) 22%,#020506 58%,rgba(2,5,6,.72) 82%,transparent);
-}
 .hero .shade{z-index:0;background:linear-gradient(90deg,#020506 0%,rgba(2,5,6,.98) 31%,rgba(2,5,6,.86) 42%,rgba(2,5,6,.2) 72%,rgba(2,5,6,.05) 100%),linear-gradient(0deg,#020506 0%,transparent 38%,rgba(0,0,0,.25) 100%)}
 .heroLogo{
   display:block;
@@ -415,7 +404,6 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
     box-shadow:inset 0 -1px var(--acid);
   }
   .hero:before{inset:72px 0 0;border-left-width:2px;border-right-width:2px;clip-path:polygon(0 0,100% 0,100% 100%,94% 100%,88% 96%,12% 96%,6% 100%,0 100%)}
-  .hero:after{left:0;top:72px;width:96px;height:190px;background:linear-gradient(90deg,#020506 0 62%,rgba(2,5,6,.98) 78%,transparent 100%)}
   .hero .shade{background:linear-gradient(0deg,#020506 0 57%,rgba(2,5,6,.9) 66%,rgba(2,5,6,.1) 94%),linear-gradient(90deg,rgba(2,5,6,.55),rgba(2,5,6,.02))}
   .heroLogo{display:block;left:50%;top:96px;width:min(76vw,330px);transform:translateX(-50%);filter:drop-shadow(0 11px 18px rgba(0,0,0,.72))}
   .priceBubble{display:block;top:210px;right:14px;min-width:0;width:142px;padding:12px 10px 13px;background:rgba(2,6,7,.92)}
@@ -429,16 +417,16 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
   .heroCopy>p{color:#eef2ee;line-height:1.55}
   .actions{display:grid;grid-template-columns:1fr 1fr;gap:9px}
   .hero .actions .button{min-width:0;padding:0 12px;font-size:.66rem;min-height:54px}
-  .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:0;width:100%;margin-top:22px}
-  .trust span{display:grid;justify-items:center;align-content:start;text-align:center;gap:7px;padding:0 7px;border-right:1px solid #394447;font-size:.62rem;line-height:1.3}
+  .trust{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;width:100%;margin-top:22px;border-top:1px solid #2f3a3e;border-bottom:1px solid #2f3a3e}
+  .trust span{display:grid;grid-template-rows:24px auto;justify-items:center;align-content:center;text-align:center;gap:7px;min-height:92px;padding:12px 5px;border-right:1px solid #394447;font-size:.66rem;line-height:1.25}
   .trust span:last-child{border-right:0}
   .trust svg{width:18px;height:18px}
   .quick{grid-template-columns:repeat(3,1fr);padding:0;background:linear-gradient(108deg,#020506 0 58%,#111b19 58.5% 70%,#05090a 70.5%)}
   .quick:before{left:62%}.quick:after{left:66%}
-  .quick>div{min-height:82px;padding:10px 5px;display:grid;justify-items:center;text-align:center;align-content:center;gap:7px;border-bottom:0;border-right:1px solid #2f3a3e}
+  .quick>div{min-height:92px;padding:12px 5px;display:grid;grid-template-rows:24px auto;justify-items:center;text-align:center;align-content:center;gap:7px;border-bottom:0;border-right:1px solid #2f3a3e}
   .quick>div:last-child{border-right:0}
   .quick svg{width:20px;height:20px}
-  .quick span{font-size:.66rem;line-height:1.2}
+  .quick span{display:grid;align-content:start;justify-items:center;min-width:0;font-size:.66rem;line-height:1.2}
   .quick small{font-size:.48rem;letter-spacing:.08em;margin-bottom:3px}
   .readiness{background:linear-gradient(126deg,#040708 0 65%,#09110d 65.3% 100%)}
   .readiness:before{left:72%;transform:rotate(23deg)}

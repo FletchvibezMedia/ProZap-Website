@@ -294,9 +294,10 @@ footer .brand img{width:240px}
 body{background:#020506}
 
 header{
-  background:linear-gradient(104deg,rgba(2,5,6,.98) 0 27%,rgba(13,21,25,.96) 27.2% 74%,rgba(2,5,6,.98) 74.2%);
-  box-shadow:0 14px 42px rgba(0,0,0,.28);
+  background:linear-gradient(104deg,#020506 0 24%,#0e181c 24.2% 48%,#27363b 52%,#101b1f 55%,#0b1316 75%,#020506 75.2%);
+  box-shadow:0 14px 42px rgba(0,0,0,.45),inset 0 1px rgba(255,255,255,.08);
 }
+header:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(104deg,transparent 0 31%,rgba(255,255,255,.075) 37%,transparent 45%,transparent 63%,rgba(201,255,19,.06) 72%,transparent 81%)}
 header:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:linear-gradient(90deg,transparent,var(--acid) 18%,rgba(201,255,19,.16) 45%,var(--acid) 82%,transparent)}
 header nav>a{position:relative;padding:31px 0 29px}
 header nav>a:after{content:"";position:absolute;left:50%;right:50%;bottom:17px;height:2px;background:var(--acid);transition:left .18s,right .18s}
@@ -307,7 +308,7 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
   min-height:780px;
   height:min(94vh,940px);
   isolation:isolate;
-  background-position:60% center;
+  background:none;
   box-shadow:inset 0 -1px var(--acid);
 }
 .hero:before{
@@ -321,7 +322,8 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
   clip-path:polygon(0 0,100% 0,100% 100%,93% 100%,88% 92%,12% 92%,6% 100%,0 100%);
   box-shadow:inset 28px 0 55px rgba(201,255,19,.035),inset -28px 0 55px rgba(201,255,19,.025);
 }
-.hero .shade{z-index:0;background:linear-gradient(90deg,#020506 0%,rgba(2,5,6,.98) 31%,rgba(2,5,6,.86) 42%,rgba(2,5,6,.2) 72%,rgba(2,5,6,.05) 100%),linear-gradient(0deg,#020506 0%,transparent 38%,rgba(0,0,0,.25) 100%)}
+.hero .shade{z-index:1;background:linear-gradient(90deg,#020506 0%,rgba(2,5,6,.96) 27%,rgba(2,5,6,.7) 43%,rgba(2,5,6,.22) 63%,rgba(2,5,6,.04) 100%),linear-gradient(0deg,rgba(2,5,6,.9) 0%,rgba(2,5,6,.22) 42%,rgba(2,5,6,.03) 100%)}
+.hero:after{content:"";position:absolute;z-index:1;pointer-events:none;top:84px;bottom:0;right:-9%;width:34%;transform:skewX(-18deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.075),rgba(201,255,19,.08),transparent);mix-blend-mode:screen}
 .heroLogo{
   display:block;
   position:absolute;
@@ -335,6 +337,7 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
   filter:drop-shadow(0 16px 25px rgba(0,0,0,.65)) drop-shadow(0 0 20px rgba(201,255,19,.09));
 }
 .heroPhotoMobile{display:none}
+.heroPhotoDesktop{display:block;position:absolute;z-index:0;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
 .heroCopy{z-index:3;width:43vw;max-width:690px}
 .status:after{content:"";display:block;width:72px;height:1px;margin-left:2px;background:var(--acid)}
 .hero h1{font-size:clamp(4.7rem,6.65vw,7.25rem);line-height:.84;max-width:690px}
@@ -403,7 +406,8 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
     box-shadow:inset 0 -1px var(--acid);
   }
   .hero:before{inset:72px 0 0;border-left-width:2px;border-right-width:2px;clip-path:polygon(0 0,100% 0,100% 100%,94% 100%,88% 96%,12% 96%,6% 100%,0 100%)}
-  .hero .shade,.heroLogo{display:none}
+  .hero .shade,.heroLogo,.heroPhotoDesktop{display:none}
+  .hero:after{display:none}
   .heroPhotoMobile{display:block;width:100%;height:auto;margin:0;position:static}
   .priceBubble{display:block;position:static;min-width:0;width:auto;margin:22px 18px 0;padding:17px 16px;background:#090e10}
   .priceBubble small,.priceBubble span{font-size:.52rem;letter-spacing:.05em}

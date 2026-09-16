@@ -7,3 +7,6 @@
 
 /* Refined quote calculation */
 .formula b{display:grid;gap:5px}.formula b small{color:#7f8b85;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase}.formula-note{margin:13px 0 0;color:#95a19b;font-size:.85rem;line-height:1.6}.quote .example-grid{margin-top:22px}
+.mile-grid{grid-template-columns:repeat(3,1fr)}
+@media(max-width:850px){.mile-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.mile-grid{grid-template-columns:1fr}}

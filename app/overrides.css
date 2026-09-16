@@ -410,7 +410,7 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
   .priceBubble small,.priceBubble span{font-size:.52rem;letter-spacing:.05em}
   .priceBubble strong{font-size:3.2rem;letter-spacing:-3px;margin:2px 0}
   .priceBubble strong sup{font-size:1.15rem}
-  .heroCopy{position:relative;width:100%;max-width:none;padding:26px 4px 0;border-top:1px solid rgba(201,255,19,.3)}
+  .heroCopy{position:relative;width:100%;max-width:none;padding:26px 4px 0;border-top:0}
   .status{font-size:.6rem;letter-spacing:.13em;line-height:1.55}
   .status:after{width:34px}
   .hero h1{font-size:clamp(3.4rem,17vw,5rem);line-height:.82;letter-spacing:-.035em;margin:18px 0 20px}
@@ -441,7 +441,7 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
 @media(max-width:430px){
   .hero{padding-top:264px;min-height:760px;background-size:auto 78%;background-position:69% 72px}
   .heroLogo{top:94px;width:72vw}
-  .priceBubble{top:192px;width:132px}
+  .priceBubble{top:160px;width:132px}
   .hero h1{font-size:clamp(3.25rem,16.2vw,4.25rem)}
   .heroCopy>p{font-size:.92rem}
 }

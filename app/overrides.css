@@ -393,9 +393,9 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
   header{background:linear-gradient(105deg,rgba(2,5,6,.98) 0 64%,rgba(13,21,25,.98) 64.5%)}
   header:after{background:linear-gradient(90deg,var(--acid),rgba(201,255,19,.2) 72%,var(--acid))}
   .hero{
-    min-height:850px;
+    min-height:770px;
     height:auto;
-    padding:340px 18px 50px;
+    padding:272px 18px 38px;
     align-items:flex-end;
     background-size:auto 78%;
     background-repeat:no-repeat;
@@ -439,7 +439,7 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
 }
 
 @media(max-width:430px){
-  .hero{padding-top:326px;min-height:820px;background-size:auto 78%;background-position:69% 72px}
+  .hero{padding-top:264px;min-height:760px;background-size:auto 78%;background-position:69% 72px}
   .heroLogo{top:94px;width:72vw}
   .priceBubble{top:192px;width:132px}
   .hero h1{font-size:clamp(3.25rem,16.2vw,4.25rem)}

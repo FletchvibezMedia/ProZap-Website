@@ -3,13 +3,13 @@
 ## Reference
 
 - Selected direction: Midnight Mobility (option 3)
-- Reference image: `/workspace/scratch/d5520d3ffef3/generated_images/exec-f455d083-d30a-4d81-a45f-7d4f360a15de.png`
+- Reference image: `/workspace/scratch/d5520d3ffef3/Neon Precision ProZap EV Charging.png`
 - Implementation: local `theme-preview-midnight-mobility` branch
 
 ## Visual comparison
 
 - Recreated the reference's cinematic black-and-lime automotive presentation with ProZap's real fleet photograph.
-- Matched the reference's condensed display typography, oversized emergency-first headline, compact glass header, lime conversion actions, pricing callout, restrained panel borders, and premium dark section rhythm.
+- Matched the reference's condensed display typography, oversized emergency-first headline, angular navigation, centered hero marque, lime conversion actions, clipped-corner pricing plaque, diagonal edge rails, and premium dark section rhythm.
 - Preserved the existing ProZap logo, service language, $139 pricing, 30/50-mile rules, Orlando location, dispatch form, reviews, social destinations, and all supporting SEO content.
 - Removed the duplicated oversized fleet banner from the visual flow because the same real image now drives the hero; the original asset remains in the project.
 
@@ -17,7 +17,7 @@
 
 - Desktop navigation remains fully visible with a stronger Call Now treatment.
 - The existing mobile navigation and fixed Call Now / Request Charge bar are preserved.
-- Mobile hero rules use a vertical dark image treatment, full-width CTAs, responsive condensed type, and stacked trust signals.
+- Mobile hero rules preserve the logo and pricing plaque, use a vertical cinematic image treatment, retain side-by-side emergency actions where space allows, and arrange trust and utility signals into compact three-column bands.
 - Multi-column cards, service checker, map, request form, growth grid, social links, footer, and pricing content collapse to single-column layouts at 800px.
 - Buttons and form controls retain mobile-friendly touch sizing.
 

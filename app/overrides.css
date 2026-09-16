@@ -334,6 +334,7 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
   object-fit:contain;
   filter:drop-shadow(0 16px 25px rgba(0,0,0,.65)) drop-shadow(0 0 20px rgba(201,255,19,.09));
 }
+.heroPhotoMobile{display:none}
 .heroCopy{z-index:3;width:43vw;max-width:690px}
 .status:after{content:"";display:block;width:72px;height:1px;margin-left:2px;background:var(--acid)}
 .hero h1{font-size:clamp(4.7rem,6.65vw,7.25rem);line-height:.84;max-width:690px}
@@ -393,24 +394,23 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
   header{background:linear-gradient(105deg,rgba(2,5,6,.98) 0 64%,rgba(13,21,25,.98) 64.5%)}
   header:after{background:linear-gradient(90deg,var(--acid),rgba(201,255,19,.2) 72%,var(--acid))}
   .hero{
-    min-height:770px;
+    min-height:0;
     height:auto;
-    padding:272px 18px 38px;
-    align-items:flex-end;
-    background-size:100% auto;
-    background-repeat:no-repeat;
-    background-position:center 72px;
+    padding:72px 18px 38px;
+    align-items:stretch;
+    background-image:none;
     background-color:#020506;
     box-shadow:inset 0 -1px var(--acid);
   }
   .hero:before{inset:72px 0 0;border-left-width:2px;border-right-width:2px;clip-path:polygon(0 0,100% 0,100% 100%,94% 100%,88% 96%,12% 96%,6% 100%,0 100%)}
-  .hero .shade{background:linear-gradient(180deg,rgba(2,5,6,.04) 72px,rgba(2,5,6,.04) 250px,rgba(2,5,6,.88) 320px,#020506 390px,#020506 100%)}
+  .hero .shade{display:none}
+  .heroPhotoMobile{display:block;order:0;width:calc(100% + 36px);height:auto;margin:0 -18px;position:relative;z-index:1}
   .heroLogo{display:block;left:50%;top:96px;width:min(76vw,330px);transform:translateX(-50%);filter:drop-shadow(0 11px 18px rgba(0,0,0,.72))}
-  .priceBubble{display:block;top:210px;right:14px;min-width:0;width:142px;padding:12px 10px 13px;background:rgba(2,6,7,.92)}
+  .priceBubble{display:block;position:relative;order:1;top:auto;right:auto;align-self:flex-end;min-width:0;width:142px;margin:-38px 0 8px;padding:12px 10px 13px;background:rgba(2,6,7,.96)}
   .priceBubble small,.priceBubble span{font-size:.52rem;letter-spacing:.05em}
   .priceBubble strong{font-size:3.2rem;letter-spacing:-3px;margin:2px 0}
   .priceBubble strong sup{font-size:1.15rem}
-  .heroCopy{position:relative;width:100%;max-width:none;padding:26px 4px 0;border-top:0}
+  .heroCopy{position:relative;order:2;width:100%;max-width:none;padding:18px 4px 0;border-top:0}
   .status{font-size:.6rem;letter-spacing:.13em;line-height:1.55}
   .status:after{width:34px}
   .hero h1{font-size:clamp(3.4rem,17vw,5rem);line-height:.82;letter-spacing:-.035em;margin:18px 0 20px}
@@ -439,9 +439,9 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
 }
 
 @media(max-width:430px){
-  .hero{padding-top:264px;min-height:760px;background-size:100% auto;background-position:center 72px}
+  .hero{padding-top:72px;min-height:0}
   .heroLogo{top:94px;width:72vw}
-  .priceBubble{top:160px;width:132px}
+  .priceBubble{top:auto;width:132px}
   .hero h1{font-size:clamp(3.25rem,16.2vw,4.25rem)}
   .heroCopy>p{font-size:.92rem}
 }

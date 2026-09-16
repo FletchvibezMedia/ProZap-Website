@@ -399,7 +399,7 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
     align-items:flex-end;
     background-size:auto 78%;
     background-repeat:no-repeat;
-    background-position:69% 72px;
+    background-position:69% -18px;
     background-color:#020506;
     box-shadow:inset 0 -1px var(--acid);
   }
@@ -439,7 +439,7 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
 }
 
 @media(max-width:430px){
-  .hero{padding-top:264px;min-height:760px;background-size:auto 78%;background-position:69% 72px}
+  .hero{padding-top:264px;min-height:760px;background-size:auto 78%;background-position:69% -18px}
   .heroLogo{top:94px;width:72vw}
   .priceBubble{top:160px;width:132px}
   .hero h1{font-size:clamp(3.25rem,16.2vw,4.25rem)}

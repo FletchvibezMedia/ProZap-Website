@@ -77,7 +77,6 @@ export default function ExpansionPage(){
           <span><Route/>Multi-market roadmap</span>
         </div>
       </div>
-      <div className="heroCallout"><strong>01</strong><span>Central Florida<br/><b>Operating now</b></span></div>
     </section>
 
     <section className="planSection" aria-labelledby="plan-title">
@@ -121,9 +120,8 @@ export default function ExpansionPage(){
         {markets.map((market,index)=><article className={index===0?"marketVisual active":"marketVisual"} key={market.city}>
           <img src={market.image} alt={market.alt} width={1600} height={900} loading={index===0?"eager":"lazy"}/>
           <div className="marketShade"/>
-          <div className="marketVisualTop"><span>{market.code}</span><small>{market.label}</small></div>
           <div className="marketVisualCopy">
-            <div className="cityLine"><MapPin/>{market.region}</div>
+            <div className="cityLine"><MapPin/>{market.region}<span>{market.label}</span></div>
             <h3>{market.city}</h3>
             <p>{market.copy}</p>
             {index>0&&<div className="comingNote"><Check/>Planned market — service availability will be announced by ProZap.</div>}

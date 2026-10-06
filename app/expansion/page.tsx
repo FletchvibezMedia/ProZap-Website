@@ -70,11 +70,11 @@ export default function ExpansionPage(){
         <a className="back" href="/"><ArrowLeft/>Back to ProZap</a>
         <div className="eyebrow"><i/>The future is mobile</div>
         <h1>Built here.<em> Designed to move.</em></h1>
-        <p>ProZap started in Central Florida with one clear belief: when an EV cannot reach power, power should be able to reach the EV. We are proving that model now—and building it to travel.</p>
+        <p>ProZap began in Central Florida with a simple belief: when an EV can’t reach power, power should come to the EV. We’re proving it here—and building it to travel.</p>
         <div className="expansionHeroActions">
-          <span><Radio/>Live operations</span>
-          <span><Zap/>Mobile-first charging</span>
-          <span><Route/>Multi-market roadmap</span>
+          <span><Radio/>Live in Central Florida</span>
+          <span><Zap/>Mobile EV charging</span>
+          <span><Route/>Built to expand</span>
         </div>
       </div>
     </section>

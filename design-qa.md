@@ -39,4 +39,4 @@
 - Release is staged on a separate branch and separate Cloudflare preview worker.
 - Production promotion requires explicit user approval after staging inspection.
 
-final result: passed
+final result: pending staging mobile verification

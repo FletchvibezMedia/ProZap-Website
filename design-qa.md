@@ -1,37 +1,42 @@
-# ProZap Midnight Mobility Design QA
+# ProZap Midnight Current Design QA
 
-## Reference
+## Reference and implementation
 
-- Selected direction: Midnight Mobility (option 3)
-- Reference image: `/workspace/scratch/d5520d3ffef3/Neon Precision ProZap EV Charging.png`
-- Implementation: local `theme-preview-midnight-mobility` branch
+- Selected direction: Midnight Current (option 3)
+- Reference image: `/workspace/scratch/d5520d3ffef3/reference/Midnight Current ProZap EV Homepage.png`
+- Implementation branch: `theme-preview-midnight-current`
+- Scope: homepage visual system only; indexed supporting routes retain their proven content and behavior
 
-## Visual comparison
+## Reference comparison
 
-- Recreated the reference's cinematic black-and-lime automotive presentation with ProZap's real fleet photograph.
-- Matched the reference's condensed display typography, oversized emergency-first headline, angular navigation, centered hero marque, lime conversion actions, clipped-corner pricing plaque, diagonal edge rails, and premium dark section rhythm.
-- Preserved the existing ProZap logo, service language, $139 pricing, 30/50-mile rules, Orlando location, dispatch form, reviews, social destinations, and all supporting SEO content.
-- Removed the duplicated oversized fleet banner from the visual flow because the same real image now drives the hero; the original asset remains in the project.
+- Recreated the reference's premium black, graphite, and electric-lime palette with restrained green atmospheric glow.
+- Replaced the stacked angular-template treatment with softly rounded glass panels, even card geometry, quiet borders, subtle reflections, and consistent gradients.
+- Rebuilt the header as a floating translucent bar with the true transparent ProZap logo, integrated gradient, understated navigation, and rounded call action.
+- Replaced condensed display typography with Inter throughout the homepage, using less aggressive weights, sentence case, tighter hierarchy, and more editorial spacing.
+- Matched the reference's split hero composition, restrained service-price plaque, paired conversion actions, rounded utility strip, premium service panels, and centered footer.
+- Used ProZap's real fleet and charger imagery; no fabricated customer imagery or claims were added.
 
 ## Responsive review
 
-- Desktop navigation remains fully visible with a stronger Call Now treatment.
-- The existing mobile navigation and fixed Call Now / Request Charge bar are preserved.
-- Mobile hero rules preserve the logo and pricing plaque, use a vertical cinematic image treatment, retain side-by-side emergency actions where space allows, and arrange trust and utility signals into compact three-column bands.
-- Multi-column cards, service checker, map, request form, growth grid, social links, footer, and pricing content collapse to single-column layouts at 800px.
-- Buttons and form controls retain mobile-friendly touch sizing.
+- Desktop render reviewed at 1365px width section by section, including hero, readiness checker, process cards, equipment panel, social strip, and footer.
+- Mobile rules use a 66px floating header, accessible menu, fluid headline sizing, a two-column action row that collapses below 390px, compact three-column trust and utility strips, and a fixed conversion bar.
+- All multi-column content collapses to a single column at 800px; cards retain consistent rounded geometry and touch controls remain at least 44px high.
+- Hero and equipment imagery use independent mobile crops without stretching or duplicating the former full-width banner.
+- Footer content is centered and wraps cleanly instead of retaining the previous uneven two-column layout.
 
-## Functional review
+## Functional and technical review
 
-- Production build completes successfully with TypeScript and all static routes generated.
-- Verified the homepage, pricing page, main navigation destinations, dispatch form controls, service-readiness controls, Google Maps destination, Google review destination, social destinations, and hidden backup contacts in the rendered application.
-- Backup-contact disclosure expands correctly and retains Rico and Kason as secondary-only numbers.
-- Browser console contains no application errors; observed errors are isolated to the cloud-browser extension, not ProZap code.
-- `robots.txt` and `sitemap.xml` remain generated routes.
+- `npm run build` passes with TypeScript and generates all static routes.
+- Homepage, pricing, FAQ, service-area, updates, expansion, robots, sitemap, and manifest routes remain present.
+- Existing call, request-service, Google Maps, Google review, email, and social destinations are unchanged.
+- Existing service-readiness logic, geolocation request preparation, SMS/email handoff, pricing, hidden backup contacts, and consent language are preserved.
+- Browser console showed no ProZap application errors; observed console messages originated only from the cloud-browser extension.
+- Metadata, canonical URL, structured data, Open Graph data, local-business details, robots, and sitemap implementation are unchanged.
 
-## Scope and publishing
+## Release safety
 
-- No production deployment was performed.
-- No live DNS, Cloudflare, or main-branch changes were made.
+- Production branch and production Cloudflare worker remain untouched during implementation and QA.
+- Release is staged on a separate branch and separate Cloudflare preview worker.
+- Production promotion requires explicit user approval after staging inspection.
 
 final result: passed

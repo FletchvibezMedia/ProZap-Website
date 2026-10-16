@@ -10,3 +10,11 @@
 .mile-grid{grid-template-columns:repeat(3,1fr)}
 @media(max-width:850px){.mile-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.mile-grid{grid-template-columns:1fr}}
+
+/* Midnight Current refinement: premium typography without oversized collisions. */
+.rate-page h1,.rate-page h2,.rate-page h3{font-family:"Inter",Arial,sans-serif;font-weight:600;line-height:1.08;letter-spacing:-.038em;text-transform:none;text-wrap:balance}
+.rate-hero h1{max-width:820px;font-size:clamp(3.25rem,5.8vw,5.9rem)}
+.rate-heading h2,.membership h2,.rate-final h2{font-size:clamp(2.25rem,3.9vw,3.85rem)}
+.rate-button,.rate-call,.rate-final a{border-radius:13px}
+.mile-grid article,.session-card,.formula,.example-grid article,.equipment-grid article,.equipment-ref{border-radius:18px;background-image:linear-gradient(120deg,rgba(255,255,255,.045),transparent 28%),radial-gradient(circle at 88% 8%,rgba(184,241,38,.07),transparent 34%)}
+@media(max-width:800px){.rate-hero h1{font-size:clamp(2.65rem,11.2vw,3.65rem);line-height:1.06}.rate-heading h2,.membership h2,.rate-final h2{font-size:clamp(2rem,8.7vw,2.8rem);line-height:1.1}}

@@ -1340,7 +1340,7 @@
   min-height: 520px;
   padding: clamp(30px, 3.7vw, 48px);
 }
-.homePage .socialPanel {
+.homePage .prozapCommunityPanel {
   display: flex !important;
   visibility: visible;
   opacity: 1;

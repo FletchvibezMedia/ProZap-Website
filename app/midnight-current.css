@@ -1127,7 +1127,7 @@
   border-radius: 17px;
   background: #030706;
 }
-.homePage .serviceFeature > img,
+.homePage .serviceFeature > img { object-fit: cover; }
 .homePage .coverageVisual img {
   width: 100%;
   height: 100%;

@@ -1242,7 +1242,7 @@
 .homePage .growth-grid article::after {
   content: attr(data-mark);
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: 18px;
   right: 20px;
   width: auto;
@@ -1255,6 +1255,7 @@
   letter-spacing: -.09em;
   transform: none;
 }
+.homePage .growth-grid article > * { position: relative; z-index: 1; }
 .homePage .growthMeta {
   color: var(--mc-lime);
   font-size: .61rem;
@@ -1291,7 +1292,7 @@
 }
 
 .homePage .reputation {
-  margin-bottom: clamp(82px, 8vw, 122px);
+  margin-bottom: 0;
 }
 .homePage .reputationCard {
   display: flex;

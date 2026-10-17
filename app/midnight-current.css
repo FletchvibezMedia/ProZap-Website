@@ -101,9 +101,9 @@
 }
 
 .homePage .hero {
-  min-height: 800px;
-  height: min(96vh, 940px);
-  padding: 138px max(7vw, 28px) 190px;
+  min-height: 650px;
+  height: min(76vh, 760px);
+  padding: 126px max(7vw, 28px) 104px;
   isolation: isolate;
   display: flex;
   align-items: center;
@@ -150,7 +150,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 64% center;
+  object-position: 64% 46%;
   filter: saturate(1.07) contrast(1.04) brightness(.9);
 }
 .homePage .heroPhotoMobile,
@@ -233,7 +233,7 @@
   z-index: 6;
   left: max(6vw, 28px);
   right: max(6vw, 28px);
-  bottom: 28px;
+  bottom: 22px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0;
@@ -584,7 +584,7 @@
   }
   .homePage header nav > a { padding: 7px 0; font-size: .76rem; }
   .homePage .hero {
-    min-height: 880px;
+    min-height: 790px;
     height: auto;
     padding: 118px 20px 34px;
     flex-direction: column;
@@ -1001,6 +1001,48 @@
 }
 
 /* Homepage consolidation: fewer, clearer decisions with balanced paired cards. */
+.homePage .whatIsProZap {
+  width: 100%;
+  padding: 48px max(7vw, 26px);
+  display: grid;
+  grid-template-columns: minmax(300px, .72fr) minmax(420px, 1.05fr) minmax(280px, .8fr);
+  align-items: center;
+  gap: clamp(28px, 4vw, 64px);
+  border-top: 1px solid rgba(200,255,32,.12);
+  border-bottom: 1px solid rgba(200,255,32,.12);
+  background:
+    linear-gradient(110deg, rgba(200,255,32,.065), transparent 26%),
+    linear-gradient(145deg, rgba(13,26,23,.95), rgba(4,10,9,.98));
+}
+.homePage .whatIsProZap h2 {
+  margin: 11px 0 0;
+  max-width: 15ch;
+  font-size: clamp(2rem, 2.85vw, 3.05rem);
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: -.04em;
+}
+.homePage .whatIsProZap > p {
+  margin: 0;
+  color: #bac5be;
+  font-size: 1rem;
+  line-height: 1.78;
+}
+.homePage .whatIsHighlights { display: grid; gap: 9px; }
+.homePage .whatIsHighlights span {
+  min-height: 48px;
+  padding: 11px 14px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  border: 1px solid rgba(209,255,93,.14);
+  border-radius: 13px;
+  background: rgba(3,9,8,.55);
+  color: #e8eeea;
+  font-size: .72rem;
+}
+.homePage .whatIsHighlights svg { width: 18px; color: var(--mc-lime); }
+
 .homePage .serviceDecision,
 .homePage .serviceOverview,
 .homePage .reputation {
@@ -1119,17 +1161,28 @@
   display: flex;
   flex-direction: column;
 }
-.homePage .serviceFeature > img,
+.homePage .equipmentVisual,
 .homePage .coverageVisual {
   display: block;
   width: calc(100% - 20px);
-  height: clamp(410px, 34vw, 540px);
+  height: clamp(370px, 30vw, 470px);
   margin: 10px 10px 0;
   overflow: hidden;
   border-radius: 17px;
   background: #030706;
 }
-.homePage .serviceFeature > img { object-fit: contain; }
+.homePage .equipmentVisual {
+  display: grid;
+  place-items: center;
+  padding: 12px;
+}
+.homePage .equipmentVisual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
 .homePage .coverageVisual img {
   width: 100%;
   height: 100%;
@@ -1240,21 +1293,7 @@
   box-shadow: 0 0 18px rgba(200,255,32,.28);
 }
 .homePage .growth-grid article::after {
-  content: attr(data-mark);
-  display: block;
-  position: absolute;
-  z-index: 0;
-  top: 18px;
-  right: 20px;
-  width: auto;
-  height: auto;
-  border: 0;
-  color: rgba(200,255,32,.075);
-  font-size: 5.7rem;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: -.09em;
-  transform: none;
+  display: none;
 }
 .homePage .growth-grid article > * { position: relative; z-index: 1; }
 .homePage .growthMeta {
@@ -1300,6 +1339,11 @@
   flex-direction: column;
   min-height: 520px;
   padding: clamp(30px, 3.7vw, 48px);
+}
+.homePage .socialPanel {
+  display: flex !important;
+  visibility: visible;
+  opacity: 1;
 }
 .homePage .reputationCard .review-action {
   width: 100%;
@@ -1362,6 +1406,7 @@
 .homePage .reputationCard .social-links small { margin-top: 3px; color: var(--mc-muted); font-size: .65rem; font-weight: 500; }
 
 @media (max-width: 900px) {
+  .homePage .whatIsProZap { grid-template-columns: 1fr; gap: 20px; }
   .homePage .decisionGrid,
   .homePage .serviceOverview,
   .homePage .reputation { grid-template-columns: 1fr; }
@@ -1373,6 +1418,8 @@
 }
 
 @media (max-width: 600px) {
+  .homePage .whatIsProZap { padding: 42px 20px; }
+  .homePage .whatIsProZap h2 { font-size: clamp(2rem, 9vw, 2.6rem); }
   .homePage .serviceDecision,
   .homePage .serviceOverview,
   .homePage .reputation {
@@ -1391,7 +1438,8 @@
   .homePage .readiness-card.decisionCard > * { grid-column: 1; }
   .homePage .priceCard .priceLead { grid-template-columns: 1fr; gap: 14px; }
   .homePage .priceLead b { max-width: none; text-align: left; }
-  .homePage .serviceFeature > img { height: auto; aspect-ratio: 1023 / 1537; border-radius: 14px; }
+  .homePage .equipmentVisual { height: auto; aspect-ratio: 4 / 3; border-radius: 14px; }
+  .homePage .equipmentVisual img { border-radius: 10px; }
   .homePage .coverageVisual { height: auto; aspect-ratio: 16 / 9; border-radius: 14px; }
   .homePage .serviceFeature > div { padding: 30px 20px; }
   .homePage .growth-heading { gap: 24px; margin-bottom: 32px; }

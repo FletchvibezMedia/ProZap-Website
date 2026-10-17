@@ -1193,12 +1193,19 @@
   object-fit: cover;
   object-position: center;
 }
-.homePage .serviceFeature > div {
+.homePage .serviceFeature > div:not(.equipmentVisual) {
   display: flex;
   flex: 1;
   flex-direction: column;
   padding: clamp(28px, 3.5vw, 44px);
   min-height: 285px;
+}
+.homePage .serviceFeature > .equipmentVisual {
+  display: block;
+  flex: none;
+  height: clamp(240px, 25vw, 360px);
+  min-height: 0;
+  padding: 12px;
 }
 .homePage .serviceFeature ul { margin: 20px 0 28px; }
 .homePage .serviceFeature .textLink { margin-top: auto; }

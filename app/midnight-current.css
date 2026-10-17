@@ -1241,6 +1241,7 @@
 }
 .homePage .growth-grid article::after {
   content: attr(data-mark);
+  display: block;
   position: absolute;
   z-index: 0;
   top: 18px;

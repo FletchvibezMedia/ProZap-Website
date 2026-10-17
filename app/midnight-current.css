@@ -1203,7 +1203,7 @@
 .homePage .serviceFeature > .equipmentVisual {
   display: block;
   flex: none;
-  height: clamp(240px, 25vw, 360px);
+  height: clamp(220px, 20vw, 310px);
   min-height: 0;
   padding: 12px;
 }

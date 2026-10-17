@@ -8,6 +8,7 @@ import "@fontsource/barlow-condensed/800.css";
 import "@fontsource/barlow-condensed/900.css";
 import "./globals.css";
 import "./overrides.css";
+import "./midnight-current.css";
 
 const siteUrl="https://prozapev.com";
 

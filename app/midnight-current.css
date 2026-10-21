@@ -103,7 +103,8 @@
 .homePage .hero {
   min-height: 560px;
   height: min(62vh, 690px);
-  padding: 126px max(7vw, 28px) 104px;
+  /* Reserve a clear lane below the floating header without making the hero taller. */
+  padding: 152px max(7vw, 28px) 78px;
   isolation: isolate;
   display: flex;
   align-items: center;
@@ -187,7 +188,7 @@
 .homePage .hero h1 {
   max-width: 720px;
   margin: 28px 0 25px;
-  font-size: clamp(3.55rem, 5.05vw, 5.65rem);
+  font-size: clamp(3.4rem, 4.6vw, 4.7rem);
   line-height: .99;
   letter-spacing: -.045em;
   text-shadow: 0 15px 40px rgba(0,0,0,.52);

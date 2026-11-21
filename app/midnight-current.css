@@ -1840,3 +1840,17 @@ header .call,
  .homePage .hero>.trust>span>i{width:34px;height:34px;flex-basis:34px}
  .homePage .priceBubble{right:14px;top:80px;min-width:130px;padding:10px 12px}
 }
+
+/* Mobile hero price card: keep it out of the dispatch label */
+@media (max-width: 800px) {
+  .homePage .hero .priceBubble {
+    display: grid;
+    position: relative;
+    inset: auto;
+    align-self: flex-end;
+    flex: 0 0 auto;
+    width: max-content;
+    max-width: 100%;
+    margin: 0 0 20px;
+  }
+}

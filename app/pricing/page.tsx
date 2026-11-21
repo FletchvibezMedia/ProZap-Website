@@ -8,7 +8,7 @@ export const metadata:Metadata={
  title:"Mobile EV Charging Cost & Pricing in Orlando",
  description:"Emergency EV charging includes a $139 service call with 30 travel miles. Compatible 12-volt jump-start assistance is $99. See Central Florida rates.",
  alternates:{canonical:"/pricing"},
- openGraph:{title:"Mobile EV Charging Pricing in Orlando | ProZap",description:"Transparent roadside EV charging prices, travel coverage and charging-session details.",url:"/pricing"}
+ openGraph:{title:"Mobile EV Charging Pricing in Orlando | ProZap",description:"Roadside EV charging rates, 30-mile coverage and $99 compatible 12-volt jump-start assistance in Orlando.",url:"/pricing"}
 };
 
 const pricingSchema={"@context":"https://schema.org","@type":"Service",name:"ProZap Mobile EV Charging",url:"https://prozapev.com/pricing",provider:{"@id":"https://prozapev.com/#business"},areaServed:{"@type":"AdministrativeArea",name:"Central Florida"},offers:{"@type":"Offer",price:"139",priceCurrency:"USD",availability:"https://schema.org/InStock",description:"Base roadside service call with the first 30 travel miles included. Charging-session and applicable extended-distance charges are additional."}};

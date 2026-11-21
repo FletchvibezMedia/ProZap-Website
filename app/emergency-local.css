@@ -208,3 +208,134 @@
  .localServicePage .updatesCta{padding:28px 20px}
  .emergencyPage footer,.localServicePage footer{padding:50px 20px 100px}
 }
+
+
+/* Compact emergency, guide, and location presentation */
+.emergencyPage .innerHeader,.localServicePage .innerHeader{height:70px;margin-top:14px;padding:0 20px;border-radius:18px}
+.emergencyPage .innerHeader .brand img,.localServicePage .innerHeader .brand img{width:165px}
+.emergencyPage .innerHeader nav,.localServicePage .innerHeader nav{gap:18px}
+.emergencyHero,.guideHero,.localHero{padding:clamp(38px,5vw,72px) clamp(24px,6vw,82px);border-radius:28px}
+.emergencyHero h1,.guideHero h1,.localHero h1{max-width:940px;margin:20px 0 16px;font-size:clamp(2.45rem,4.7vw,4.55rem);line-height:1.06;letter-spacing:-.045em}
+.emergencyHero>p,.guideHero>p,.localHero>p{max-width:760px;font-size:1rem;line-height:1.68}
+.emergencyActions,.localActions{margin-top:22px}
+.emergencyTrust{margin-top:30px}
+.emergencyTrust span{padding-top:14px}
+.emergencyIntro,.emergencyServices,.emergencySteps,.emergencyCoverage,.emergencyGuideCta,.emergencyFaq,.guideBody,.guideBottom,.localContent,.localGridSection,.localJumpstart,.localFaq,.orlandoLocalIntro,.orlandoSubareas{margin:16px auto;padding:clamp(24px,3.3vw,44px);border-radius:24px}
+.emergencyIntro h2,.emergencyServices>h2,.emergencySteps h2,.emergencyCoverage h2,.emergencyGuideCta h2,.emergencyFaq h2,.localNarrative h2,.localGridSection h2,.localJumpstart h2,.localFaq h2,.orlandoLocalIntro h1,.orlandoSubareas h2,.guideBottom h2{font-size:clamp(1.7rem,2.8vw,2.8rem);line-height:1.12;letter-spacing:-.035em}
+.emergencyCards{gap:14px;margin-top:22px}
+.emergencyCard{padding:22px;border-radius:20px}
+.emergencyCard h3{margin:16px 0 7px;font-size:1.3rem}
+.emergencyCard>p{min-height:0;line-height:1.65}
+.emergencyPrice{margin:16px 0 0;padding:13px 0}
+.emergencyPrice strong{font-size:2.25rem}
+.emergencyCard ul{gap:8px;margin:15px 0 18px}
+.emergencyStepGrid{gap:12px;margin-top:20px}
+.emergencyStepGrid article{padding:18px;border-radius:18px}
+.emergencyStepGrid article>b{display:none}
+.emergencyStepGrid h3{margin:0 0 7px;font-size:1rem}
+.emergencyStepGrid p{font-size:.87rem}
+.emergencyCoverage aside{padding:20px}
+.emergencyFaq details,.localFaq details{margin-top:7px;padding:11px 2px;border:0;border-bottom:1px solid var(--local-line);border-radius:0;background:transparent}
+.emergencyFaq summary,.localFaq summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--local-lime);font-size:.96rem;font-weight:750}
+.emergencyFaq summary::-webkit-details-marker,.localFaq summary::-webkit-details-marker{display:none}
+.emergencyFaq summary::after,.localFaq summary::after{content:"+";flex:none;color:var(--local-lime);font-size:1.2rem;font-weight:500}
+.emergencyFaq details[open] summary::after,.localFaq details[open] summary::after{content:"−"}
+.emergencyFaq details p,.localFaq details p{max-width:860px;margin:10px 0 3px;padding:13px 15px;border-left:2px solid var(--local-lime);border-radius:0 12px 12px 0;background:rgba(201,255,19,.045);font-size:.9rem;line-height:1.65}
+.guideHero{padding-bottom:48px}
+.guideBody{grid-template-columns:minmax(0,1fr) 280px;gap:24px}
+.guideMain>section{padding:24px 0;border-bottom:1px solid var(--local-line)}
+.guideMain>section:last-child{padding-bottom:0}
+.guideMain h2{font-size:1.25rem}
+.guideSidebar{gap:10px}
+.guideSideCard{padding:18px;border-radius:18px}
+.guideBottom{margin-bottom:16px}
+.localBack{margin-bottom:16px}
+.localAreaPicker,.areaPagePicker{position:relative;z-index:2;width:max-content;max-width:100%;margin:0 0 16px}
+.localAreaPicker summary,.areaPagePicker summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:9px;padding:9px 13px;border:1px solid rgba(201,255,19,.25);border-radius:999px;background:rgba(2,7,8,.62);color:#dce8d9;font-size:.78rem;font-weight:700}
+.localAreaPicker summary::-webkit-details-marker,.areaPagePicker summary::-webkit-details-marker{display:none}
+.localAreaPicker summary svg,.areaPagePicker summary svg{width:16px;height:16px;color:var(--local-lime)}
+.localAreaPicker[open] summary,.areaPagePicker[open] summary{border-radius:16px 16px 0 0}
+.localAreaPicker>div,.areaPagePicker>div{position:absolute;top:100%;left:0;min-width:250px;display:grid;padding:8px;border:1px solid rgba(201,255,19,.25);border-top:0;border-radius:0 16px 16px 16px;background:#071011;box-shadow:0 18px 42px rgba(0,0,0,.42)}
+.localAreaPicker>div a,.areaPagePicker>div a{padding:10px 11px;border-radius:9px;color:#dce8d9;font-size:.83rem}
+.localAreaPicker>div a:hover,.areaPagePicker>div a:hover{background:rgba(201,255,19,.08);color:var(--local-lime)}
+.localPhotoStrip{width:min(1280px,calc(100% - 56px));margin:16px auto;padding:clamp(22px,3vw,38px);border:1px solid var(--local-line);border-radius:24px;background:var(--local-panel)}
+.localPhotoStrip>.localPhotoHeading{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:18px}
+.localPhotoStrip .eyebrow{margin:0 0 7px;color:var(--local-lime)}
+.localPhotoStrip h2{margin:0;font-size:clamp(1.5rem,2.4vw,2.25rem);line-height:1.1;letter-spacing:-.035em}
+.localPhotoStrip>.localPhotoHeading p{max-width:450px;margin:0;color:#aebbb2;font-size:.86rem;line-height:1.55}
+.localPhotoGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.localPhotoGrid figure{min-width:0;margin:0;overflow:hidden;border:1px solid var(--local-line);border-radius:17px;background:#071011}
+.localPhotoGrid img{display:block;width:100%;height:190px;object-fit:cover;transition:transform .35s ease}
+.localPhotoGrid a:hover img{transform:scale(1.035)}
+.localPhotoGrid figcaption{display:grid;gap:5px;padding:12px 14px}
+.localPhotoGrid figcaption strong{color:#edf3eb;font-size:.92rem}
+.localPhotoGrid figcaption small{color:#86948b;font-size:.68rem;line-height:1.45}
+.localPhotoGrid figcaption small a{color:#aebbb2;text-decoration:underline;text-underline-offset:2px}
+.orlandoLocalIntro{margin-top:16px}
+.orlandoLandmarkGallery{width:min(1280px,calc(100% - 56px));margin:16px auto;padding:clamp(22px,3vw,38px);border:1px solid var(--local-line);border-radius:24px;background:var(--local-panel)}
+.orlandoLandmarkGallery h2{margin:0 0 18px;font-size:clamp(1.5rem,2.4vw,2.25rem);line-height:1.1}
+.localServicePage .updatesCta{width:min(1280px,calc(100% - 56px));margin:16px auto;padding:30px clamp(24px,4vw,46px);border-radius:22px}
+.localServicePage .updatesCta h2{font-size:clamp(1.65rem,2.6vw,2.6rem);line-height:1.12}
+@media(max-width:900px){
+ .emergencyPage .innerHeader,.localServicePage .innerHeader{width:calc(100% - 24px);height:66px;margin-top:10px;padding:0 13px}
+ .emergencyPage .innerHeader .brand img,.localServicePage .innerHeader .brand img{width:142px}
+ .emergencyHero,.guideHero,.localHero{padding:42px 23px;border-radius:23px}
+ .emergencyHero h1,.guideHero h1,.localHero h1{font-size:clamp(2.25rem,7vw,3.8rem)}
+ .emergencyIntro,.emergencyServices,.emergencySteps,.emergencyCoverage,.emergencyGuideCta,.emergencyFaq,.guideBody,.guideBottom,.localContent,.localGridSection,.localJumpstart,.localFaq,.orlandoLocalIntro,.orlandoSubareas,.localPhotoStrip,.orlandoLandmarkGallery{width:calc(100% - 24px);margin:12px auto;padding:24px 20px;border-radius:21px}
+ .localPhotoGrid img{height:160px}
+ .localServicePage .updatesCta{width:calc(100% - 24px);margin:12px auto;padding:25px 20px}
+}
+@media(max-width:600px){
+ .emergencyHero,.guideHero,.localHero{padding:36px 18px}
+ .emergencyHero h1,.guideHero h1,.localHero h1{font-size:clamp(2.05rem,9vw,3rem);line-height:1.06}
+ .emergencyTrust{margin-top:22px}
+ .emergencyCards{grid-template-columns:1fr}
+ .emergencyStepGrid{grid-template-columns:1fr}
+ .emergencyFaq details,.localFaq details{padding:10px 1px}
+ .guideMain>section{padding:21px 0}
+ .localPhotoStrip>.localPhotoHeading{align-items:flex-start;flex-direction:column;gap:8px}
+ .localPhotoGrid{grid-template-columns:1fr}
+ .localPhotoGrid img{height:190px}
+ .localAreaPicker,.areaPagePicker{width:100%}
+ .localAreaPicker summary,.areaPagePicker summary{width:max-content}
+ .localAreaPicker>div,.areaPagePicker>div{width:min(320px,calc(100vw - 44px))}
+}
+
+.serviceAreaPage .innerHeader{width:min(1440px,calc(100% - 48px));height:70px;margin:14px auto 0;padding:0 20px;border-radius:18px}
+.serviceAreaPage .innerHeader .brand img{width:165px;height:auto}
+.serviceAreaPage .innerHeader nav{gap:18px;font-size:.82rem}
+.serviceAreaPage .areaPagePicker{width:min(1280px,calc(100% - 56px));margin:12px auto 0}
+.serviceAreaPage .areaCoverage{padding:56px max(5vw,24px);gap:42px}
+.serviceAreaPage .areaMap{margin:0}
+.serviceAreaPage .areaMap img{border-radius:22px}
+.serviceAreaPage .areaMap figcaption{padding:16px 18px;border-radius:0 0 18px 18px}
+.serviceAreaPage .areaDirectory{gap:18px}
+.serviceAreaPage .areaDirectory>div,.serviceAreaPage .areaDirectory aside{padding:20px;border-radius:18px}
+.serviceAreaPage .areaDirectory h3{font-size:1.1rem}
+.serviceAreaPage .areaDirectory p{margin:8px 0 12px;font-size:.9rem}
+.serviceAreaPage .areaDirectory>div>div{gap:7px}
+.serviceAreaPage .areaDirectory>div>div span{padding:7px 10px;font-size:.8rem}
+.serviceAreaPage .areaBenefits article{padding:28px}
+.serviceAreaPage .areaBenefits h2{margin:15px 0 8px}
+.serviceAreaPage .areaCoverage h2,.serviceAreaPage .areaIntent h2{font-size:clamp(1.8rem,3vw,3rem);line-height:1.08}
+.serviceAreaPage .areaIntent{margin:16px max(5vw,24px) 24px;padding:40px;border-radius:22px}
+.serviceAreaPage .areaIntent>div:last-child{margin-top:20px}
+.emergencyPage .updatesCta{width:min(1280px,calc(100% - 56px));margin:16px auto;padding:30px clamp(24px,4vw,46px);border-radius:22px}
+.emergencyPage .updatesCta h2{font-size:clamp(1.65rem,2.6vw,2.6rem);line-height:1.12}
+.photoNote{margin:14px 0 0;color:#87958c;font-size:.75rem;line-height:1.5}
+@media(max-width:900px){
+ .serviceAreaPage .innerHeader{width:calc(100% - 24px);height:66px;margin-top:10px;padding:0 13px}
+ .serviceAreaPage .innerHeader .brand img{width:142px}
+ .serviceAreaPage .innerHeader nav{display:none}
+ .serviceAreaPage .areaPagePicker{width:calc(100% - 24px);margin-top:10px}
+ .serviceAreaPage .areaCoverage{padding:38px 12px;gap:24px}
+ .serviceAreaPage .areaBenefits article{padding:22px}
+ .serviceAreaPage .areaIntent{margin:12px 12px 18px;padding:26px 20px}
+ .serviceAreaPage .updatesCta{width:calc(100% - 24px);margin:12px auto;padding:25px 20px}
+}
+@media(max-width:600px){
+ .serviceAreaPage .areaPagePicker summary{width:max-content}
+ .serviceAreaPage .areaCoverage{padding-top:26px;padding-bottom:26px}
+ .serviceAreaPage .areaDirectory>div,.serviceAreaPage .areaDirectory aside{padding:16px}
+ .serviceAreaPage .areaIntent{padding:22px 18px}
+}

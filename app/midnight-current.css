@@ -1810,3 +1810,33 @@ header .call,
 .jumpstartPromo p{margin:0 0 13px;color:#aebbb2;font-size:.88rem;line-height:1.65}
 @media(max-width:800px){.emergencyPromo{grid-template-columns:1fr;width:calc(100% - 20px);margin:10px auto;padding:24px 18px;border-radius:21px}.emergencyPromoIntro{padding:0}.jumpstartPromo{padding:19px;border-radius:18px}}
 @media(min-width:801px) and (max-width:1120px){.homePage header nav a:nth-of-type(6),.homePage header nav a:nth-of-type(7){display:none}}
+
+/* Less screen-consuming homepage header and hero */
+.homePage header{height:68px;top:14px}
+.homePage .brand img{width:170px;height:50px}
+.homePage .hero{min-height:500px;height:min(58vh,620px);padding:116px max(6vw,26px) 70px}
+.homePage .hero h1{font-size:clamp(3rem,4vw,4.2rem);margin:20px 0 17px}
+.homePage .heroCopy>p{font-size:1rem;line-height:1.58}
+.homePage .actions{margin:23px 0 22px}
+.homePage .hero>.trust>span{min-height:90px;padding:15px clamp(14px,2vw,28px);gap:13px}
+.homePage .hero>.trust>span>i{width:44px;height:44px;flex-basis:44px}
+.homePage .priceBubble{top:96px;min-width:180px;padding:17px 20px 15px}
+.homePage .priceBubble strong{font-size:2.7rem}
+@media(max-width:900px){
+ .homePage header{height:64px;top:10px}
+ .homePage .brand img{width:145px;height:44px}
+ .homePage .hero{min-height:540px;height:auto;padding:116px 22px 140px}
+ .homePage .hero h1{font-size:clamp(2.6rem,8vw,4rem)}
+ .homePage .hero>.trust>span{min-height:78px;padding:12px 10px}
+ .homePage .priceBubble{top:94px;min-width:152px;padding:13px 16px}
+}
+@media(max-width:600px){
+ .homePage header{width:calc(100% - 20px);height:60px;top:8px;padding:0 12px}
+ .homePage .brand img{width:130px;height:40px}
+ .homePage .hero{min-height:0;height:auto;padding:106px 18px 132px}
+ .homePage .hero h1{font-size:clamp(2.25rem,9.8vw,3.2rem)}
+ .homePage .hero>.trust{left:12px;right:12px;bottom:12px;border-radius:17px}
+ .homePage .hero>.trust>span{min-height:70px;padding:9px 5px}
+ .homePage .hero>.trust>span>i{width:34px;height:34px;flex-basis:34px}
+ .homePage .priceBubble{right:14px;top:80px;min-width:130px;padding:10px 12px}
+}

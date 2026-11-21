@@ -18,3 +18,33 @@
 .rate-button,.rate-call,.rate-final a{border-radius:13px}
 .mile-grid article,.session-card,.formula,.example-grid article,.equipment-grid article,.equipment-ref{border-radius:18px;background-image:linear-gradient(120deg,rgba(255,255,255,.045),transparent 28%),radial-gradient(circle at 88% 8%,rgba(184,241,38,.07),transparent 34%)}
 @media(max-width:800px){.rate-hero h1{font-size:clamp(2.65rem,11.2vw,3.65rem);line-height:1.06}.rate-heading h2,.membership h2,.rate-final h2{font-size:clamp(2rem,8.7vw,2.8rem);line-height:1.1}}
+
+/* Tighter pricing layout */
+.rate-nav{height:70px;padding-left:max(4vw,20px);padding-right:max(4vw,20px)}
+.rate-logo img{width:clamp(145px,15vw,210px);height:54px}
+.rate-nav>div{gap:19px;font-size:.82rem}
+.rate-hero{padding:60px max(6vw,22px) 56px}
+.rate-hero h1{font-size:clamp(2.85rem,4.7vw,4.8rem);margin:18px 0}
+.rate-hero>p{font-size:1rem;line-height:1.62}
+.rate-hero-actions{margin-top:22px}
+.rate-base{padding:26px max(6vw,22px);gap:5vw}
+.rate-base strong{font-size:clamp(3.5rem,6vw,5.4rem)}
+.rate-section{padding:66px max(6vw,22px)}
+.rate-heading h2,.membership h2,.rate-final h2{font-size:clamp(1.9rem,3.2vw,3.25rem);margin:11px 0 14px}
+.rate-heading p{font-size:.97rem;line-height:1.62}
+.mile-grid{margin-top:28px}
+.mile-grid article{min-height:175px;padding:20px}
+.mile-grid strong{margin:16px 0 9px}
+.session-card{margin-top:28px}
+.session-card>div{min-height:76px;padding:15px 19px}
+.formula{margin-top:28px;padding:23px}
+.example-grid article{padding:20px}
+.equipment-grid{margin-top:28px}
+.equipment-grid article{padding:22px}
+.equipment-grid b{margin:16px 0 8px}
+.membership{padding:52px max(6vw,22px);gap:30px}
+.rate-final{padding:66px 22px}
+.rate-footer{padding:30px max(5vw,22px);gap:18px}
+.rate-footer img{width:165px;height:50px}
+@media(max-width:850px){.rate-nav{height:66px}.rate-hero{padding-top:48px;padding-bottom:48px}.rate-section{padding-top:48px;padding-bottom:48px}.membership{padding-top:40px;padding-bottom:40px}}
+@media(max-width:560px){.rate-nav{height:62px}.rate-logo img{width:136px;height:46px}.rate-hero{padding:40px 18px 42px}.rate-hero h1{font-size:clamp(2.45rem,10.6vw,3.15rem);margin:14px 0}.rate-base,.rate-section,.membership{padding-left:18px;padding-right:18px}.rate-base{padding-top:22px;padding-bottom:22px}.rate-section{padding-top:40px;padding-bottom:40px}.mile-grid article{min-height:145px}.membership{padding-top:34px;padding-bottom:34px}.rate-final{padding:48px 18px}}

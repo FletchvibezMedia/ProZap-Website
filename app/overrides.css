@@ -454,3 +454,13 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
   .hero .actions .button{width:100%}
   .quick span{font-size:.59rem}
 }
+
+.jumpstartPricing{width:min(1320px,calc(100% - 48px));margin:24px auto;padding:clamp(26px,4vw,54px);display:grid;grid-template-columns:1fr 260px;gap:28px;align-items:center;border:1px solid rgba(201,255,19,.22);border-radius:26px;background:radial-gradient(ellipse at 95% 0,rgba(201,255,19,.08),transparent 38%),linear-gradient(135deg,#111a18,#05090a)}
+.jumpstartPricing h2{margin:12px 0;font-size:clamp(1.7rem,3vw,2.8rem);letter-spacing:-.04em}
+.jumpstartPricing p{max-width:780px;color:#b5c1b8;line-height:1.75}
+.jumpstartPrice{display:grid;justify-items:center;gap:8px;padding:22px;border:1px solid rgba(201,255,19,.22);border-radius:20px;background:rgba(2,7,8,.42);text-align:center}
+.jumpstartPrice strong{color:var(--acid);font-size:3.2rem;letter-spacing:-.05em}
+.jumpstartPrice span{color:#cbd5ce;font-size:.82rem}
+.jumpstartPrice a{display:flex;align-items:center;gap:5px;margin-top:8px;color:var(--acid);font-size:.8rem;font-weight:800}
+.jumpstartPrice svg{width:17px}
+@media(max-width:800px){.jumpstartPricing{width:calc(100% - 20px);grid-template-columns:1fr;margin:10px auto;padding:28px 20px;border-radius:21px}.jumpstartPrice{width:100%}}

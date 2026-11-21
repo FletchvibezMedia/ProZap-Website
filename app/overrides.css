@@ -464,3 +464,17 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
 .jumpstartPrice a{display:flex;align-items:center;gap:5px;margin-top:8px;color:var(--acid);font-size:.8rem;font-weight:800}
 .jumpstartPrice svg{width:17px}
 @media(max-width:800px){.jumpstartPricing{width:calc(100% - 20px);grid-template-columns:1fr;margin:10px auto;padding:28px 20px;border-radius:21px}.jumpstartPrice{width:100%}}
+
+
+/* Accessible regional navigation menu */
+.serviceAreaDropdown{position:relative;display:inline-block;z-index:60}
+.serviceAreaDropdown>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;white-space:nowrap;color:inherit;font:inherit;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase}
+.serviceAreaDropdown>summary::-webkit-details-marker{display:none}
+.serviceAreaDropdown>summary::after{content:"";width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);transition:transform .16s ease;margin-top:-4px}
+.serviceAreaDropdown[open]>summary::after{transform:rotate(225deg);margin-top:4px}
+.serviceAreaDropdown>div{position:absolute;top:calc(100% + 9px);left:50%;transform:translateX(-50%);z-index:80;min-width:238px;display:grid;gap:3px;padding:8px;border:1px solid rgba(201,255,19,.28);border-radius:14px;background:linear-gradient(145deg,rgba(13,22,23,.99),rgba(4,8,9,.99));box-shadow:0 18px 42px rgba(0,0,0,.48)}
+.serviceAreaDropdown>div a{display:flex;align-items:center;min-height:42px;padding:10px 12px!important;border-radius:9px;color:#dce6df;font-size:.82rem!important;font-weight:700;letter-spacing:0!important;text-transform:none!important;white-space:nowrap;transition:background .16s,color .16s}
+.serviceAreaDropdown>div a::after{display:none!important}
+.serviceAreaDropdown>div a:hover{color:#fff;background:rgba(201,255,19,.1)}
+.homePage header nav .serviceAreaDropdown>div a{text-align:left}
+@media(max-width:800px){.homePage header nav.open .serviceAreaDropdown{width:100%;display:flex;flex-direction:column;align-items:center;gap:12px}.homePage header nav.open .serviceAreaDropdown>summary{padding:0!important;font-size:.8rem;letter-spacing:.06em}.homePage header nav.open .serviceAreaDropdown>div{position:static;transform:none;width:min(100%,320px);min-width:0;justify-items:stretch;margin-top:0;background:rgba(7,12,13,.96);box-shadow:none}.homePage header nav.open .serviceAreaDropdown>div a{justify-content:center}}

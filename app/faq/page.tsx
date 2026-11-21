@@ -1,4 +1,5 @@
 import type {Metadata} from "next";
+import ServiceAreaDropdown from "../components/ServiceAreaDropdown";
 import {ArrowLeft,BatteryCharging,ChevronRight,Phone,Zap} from "lucide-react";
 
 export const metadata:Metadata={title:"Emergency EV Charging FAQ | Orlando & Central Florida",description:"Answers about emergency EV charging, ProZap’s 24/7 dispatch line, Tesla compatibility, charging time, roadside pricing, safety and service availability.",alternates:{canonical:"/faq"},openGraph:{title:"Emergency EV Charging FAQ | ProZap",description:"Straight answers about emergency roadside EV charging, 24/7 dispatch, compatibility, cost and Central Florida coverage.",url:"/faq"}};
@@ -24,7 +25,7 @@ const breadcrumbSchema={"@context":"https://schema.org","@type":"BreadcrumbList"
 
 export default function FAQPage(){return <main className="faqPage">
  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqSchema)}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbSchema)}}/>
- <header className="innerHeader"><a className="brand" href="/"><img width={1859} height={546} src="/prozap-logo-transparent.webp" alt="ProZap Mobile EV Charging"/></a><nav><a href="/mobile-ev-charging-orlando">Service area</a><a href="/pricing">Pricing</a><a href="/faq">FAQ</a><a href="/instagram">Updates</a><a href="/#request">Request help</a></nav><a className="call" href="tel:+14076862539"><Phone/>Call now</a></header>
+ <header className="innerHeader"><a className="brand" href="/"><img width={1859} height={546} src="/prozap-logo-transparent.webp" alt="ProZap Mobile EV Charging"/></a><nav><ServiceAreaDropdown/><a href="/pricing">Pricing</a><a href="/faq">FAQ</a><a href="/instagram">Updates</a><a href="/#request">Request help</a></nav><a className="call" href="tel:+14076862539"><Phone/>Call now</a></header>
  <section className="faqIntro"><div><a className="back" href="/"><ArrowLeft/>Back to ProZap</a><div className="eyebrow">Mobile charging answers</div><h1>Questions before we charge?</h1><p>Start here. If your EV is already stranded, skip the reading assignment and call dispatch.</p></div><BatteryCharging className="faqBolt"/></section>
  <section className="faqList">{faqs.map(([q,a],i)=><details key={q} open={i===0}><summary><span>{String(i+1).padStart(2,"0")}</span>{q}<ChevronRight/></summary><p>{a}</p></details>)}</section>
  <section className="updatesCta"><div><div className="eyebrow">Still need an answer?</div><h2>Talk to an actual human.</h2></div><a className="button primary" href="tel:+14076862539"><Phone/>Call 407-686-2539</a></section>

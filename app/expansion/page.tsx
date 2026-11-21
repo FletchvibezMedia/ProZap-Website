@@ -1,4 +1,5 @@
 import type {Metadata} from "next";
+import ServiceAreaDropdown from "../components/ServiceAreaDropdown";
 import {ArrowLeft, BatteryCharging, Building2, CarFront, Check, MapPin, Radio, Route, ShieldCheck, UsersRound, Zap} from "lucide-react";
 import "./expansion.css";
 
@@ -52,7 +53,7 @@ export default function ExpansionPage(){
       <a className="brand" href="/"><img width={1859} height={546} src="/prozap-logo-transparent.webp" alt="ProZap Mobile EV Charging"/></a>
       <nav>
         <a href="/#how">How it works</a>
-        <a href="/mobile-ev-charging-orlando">Service area</a>
+        <ServiceAreaDropdown/>
         <a href="/pricing">Pricing</a>
         <a href="/faq">FAQ</a>
         <a href="/expansion" aria-current="page">Expansion</a>

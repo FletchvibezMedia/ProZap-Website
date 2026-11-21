@@ -566,3 +566,16 @@
     width:calc(100% - 24px);
   }
 }
+
+/* The map and city directory align exactly with the three location cards */
+.serviceAreaPage .areaCoverage {
+  padding:0;
+  border:0;
+  background:transparent;
+  box-shadow:none;
+}
+.serviceAreaPage .areaCoverage > .areaMap,
+.serviceAreaPage .areaCoverage > .areaDirectory { width:100%; }
+@media(max-width:900px) {
+  .serviceAreaPage .areaCoverage { padding:0; }
+}

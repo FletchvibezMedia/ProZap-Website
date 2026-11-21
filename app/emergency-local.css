@@ -339,3 +339,230 @@
  .serviceAreaPage .areaDirectory>div,.serviceAreaPage .areaDirectory aside{padding:16px}
  .serviceAreaPage .areaIntent{padding:22px 18px}
 }
+
+
+/* Service-area hub: one aligned container and three accessible expandable local pages */
+.serviceAreaPage .areaCoverage,
+.serviceAreaPage .areaPagePickerHub,
+.serviceAreaPage .areaLocationChoices,
+.serviceAreaPage .areaBenefits,
+.serviceAreaPage .areaIntent,
+.serviceAreaPage .updatesCta {
+  width: min(1280px, calc(100% - 48px));
+  margin-right: auto;
+  margin-left: auto;
+}
+.serviceAreaPage .areaCoverage {
+  margin-top: 22px;
+  margin-bottom: 14px;
+  padding: 28px;
+}
+.serviceAreaPage .areaMap,
+.serviceAreaPage .areaDirectory {
+  width: 100%;
+  max-width: none;
+}
+.serviceAreaPage .areaMap { margin-bottom: 20px; }
+.serviceAreaPage .areaPagePickerHub { margin-top: 14px; margin-bottom: 14px; }
+.serviceAreaPage .areaPagePickerHub details { width: 100%; }
+.serviceAreaPage .areaPagePickerHub summary {
+  width: 100%;
+  min-height: 58px;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-radius: 17px;
+  background: linear-gradient(110deg, rgba(201,255,19,.09), rgba(4,12,13,.96) 45%);
+  font-size: .98rem;
+}
+.serviceAreaPage .areaPagePickerHub[open] summary { border-radius: 17px 17px 0 0; }
+.serviceAreaPage .areaPagePickerHub details[open] summary { border-radius: 17px 17px 0 0; }
+.serviceAreaPage .areaPagePickerHub details > div {
+  position: static;
+  width: 100%;
+  min-width: 0;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  border: 1px solid rgba(201,255,19,.25);
+  border-top: 0;
+  border-radius: 0 0 17px 17px;
+  box-shadow: none;
+}
+.serviceAreaPage .areaPagePickerHub details > div a {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  padding: 13px 16px;
+  border-radius: 9px;
+}
+.areaLocationChoices {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+}
+.areaLocationIntro {
+  padding: 14px 6px 6px;
+}
+.areaLocationIntro .eyebrow { margin-bottom: 8px; color: var(--local-lime); }
+.areaLocationIntro h1 {
+  margin: 0 0 10px;
+  font-size: clamp(1.8rem,3vw,2.7rem);
+  line-height: 1.12;
+  letter-spacing: -.04em;
+}
+.areaLocationIntro p {
+  max-width: 820px;
+  margin: 0;
+  color: #aebbb2;
+  font-size: .98rem;
+  line-height: 1.65;
+}
+.areaLocationCard {
+  overflow: hidden;
+  border: 1px solid var(--local-line);
+  border-radius: 20px;
+  background: var(--local-panel);
+  box-shadow: inset 0 1px rgba(255,255,255,.035);
+}
+.areaLocationCard[open] {
+  border-color: rgba(201,255,19,.35);
+  box-shadow: 0 18px 48px rgba(0,0,0,.22), inset 0 1px rgba(255,255,255,.04);
+}
+.areaLocationCard > summary {
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 24px;
+  list-style: none;
+  cursor: pointer;
+}
+.areaLocationCard > summary::-webkit-details-marker { display:none; }
+.areaLocationTitle { min-width:0; display:grid; gap:5px; }
+.areaLocationTitle strong { color:#f3f7f1; font-size:1.15rem; font-weight:700; letter-spacing:-.02em; }
+.areaLocationTitle small { color:#9eaaa2; font-size:.87rem; line-height:1.45; }
+.areaLocationToggle {
+  flex:none;
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  color:var(--local-lime);
+  font-size:.84rem;
+  font-weight:750;
+}
+.areaLocationToggle svg { width:17px; transition:transform .2s ease; }
+.areaLocationCard[open] .areaLocationToggle svg { transform:rotate(90deg); }
+.areaLocationPanel {
+  display:grid;
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  align-items:center;
+  gap:clamp(22px,4vw,48px);
+  padding:0 24px 24px;
+}
+.areaLocationPanel figure {
+  min-width:0;
+  overflow:hidden;
+  margin:0;
+  border:1px solid var(--local-line);
+  border-radius:16px;
+  background:#05090a;
+}
+.areaLocationPanel figure img {
+  display:block;
+  width:100%;
+  height:clamp(190px,23vw,300px);
+  object-fit:cover;
+}
+.areaLocationPanel figcaption {
+  padding:9px 12px;
+  color:#89978e;
+  font-size:.72rem;
+  line-height:1.5;
+}
+.areaLocationPanel figcaption a { color:#c4d0c7; text-decoration:underline; text-underline-offset:2px; }
+.areaLocationPanel .eyebrow { margin-bottom:9px; color:var(--local-lime); }
+.areaLocationPanel h2 {
+  margin:0 0 11px;
+  color:#f3f7f1;
+  font-size:clamp(1.45rem,2.4vw,2.1rem);
+  line-height:1.12;
+  letter-spacing:-.035em;
+}
+.areaLocationPanel p {
+  margin:0 0 18px;
+  color:#aebbb2;
+  font-size:.95rem;
+  line-height:1.7;
+}
+.areaLocationPanel .button { min-height:46px; padding-inline:18px; border-radius:13px; }
+.areaLocationPanel .button svg { width:17px; }
+.areaLocationCard > summary:focus-visible,
+.areaPagePickerHub summary:focus-visible,
+.areaLocationPanel a:focus-visible {
+  outline:2px solid var(--local-lime);
+  outline-offset:4px;
+}
+@media(max-width:900px) {
+  .serviceAreaPage .areaCoverage,
+  .serviceAreaPage .areaPagePickerHub,
+  .serviceAreaPage .areaLocationChoices,
+  .serviceAreaPage .areaBenefits,
+  .serviceAreaPage .areaIntent,
+  .serviceAreaPage .updatesCta {
+    width:calc(100% - 24px);
+  }
+  .serviceAreaPage .areaCoverage { padding:22px; }
+  .serviceAreaPage .areaDirectory { grid-template-columns:1fr; gap:14px; }
+  .serviceAreaPage .areaDirectory aside { grid-template-columns:1fr; gap:8px; }
+  .serviceAreaPage .areaPagePickerHub details > div { grid-template-columns:1fr; }
+  .areaLocationPanel { grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:18px; padding:0 18px 18px; }
+  .areaLocationPanel figure img { height:220px; }
+  .areaLocationCard > summary { min-height:78px; padding:15px 18px; }
+}
+@media(max-width:600px) {
+  .serviceAreaPage .areaCoverage { padding:14px; }
+  .serviceAreaPage .areaMap { margin-bottom:14px; }
+  .serviceAreaPage .areaDirectory>div,.serviceAreaPage .areaDirectory aside { padding:15px; }
+  .serviceAreaPage .areaPagePickerHub summary { padding:14px 15px; font-size:.9rem; }
+  .serviceAreaPage .areaPagePickerHub details > div a { min-height:48px; }
+  .areaLocationChoices { gap:9px; }
+  .areaLocationIntro { padding:12px 3px 5px; }
+  .areaLocationIntro h1 { font-size:1.7rem; }
+  .areaLocationIntro p { font-size:.92rem; }
+  .areaLocationCard { border-radius:17px; }
+  .areaLocationCard > summary { min-height:76px; gap:11px; padding:14px; }
+  .areaLocationTitle strong { font-size:1rem; }
+  .areaLocationTitle small { font-size:.78rem; }
+  .areaLocationToggle { gap:4px; font-size:.73rem; }
+  .areaLocationToggle svg { width:15px; }
+  .areaLocationPanel { grid-template-columns:1fr; gap:14px; padding:0 14px 15px; }
+  .areaLocationPanel figure img { height:clamp(180px,55vw,250px); }
+  .areaLocationPanel p { font-size:.92rem; }
+  .areaLocationPanel .button { width:100%; justify-content:center; }
+  .serviceAreaPage .areaBenefits { gap:10px; }
+  .serviceAreaPage .areaIntent { padding:22px 18px; }
+}
+
+
+/* Match the desktop width of all local landing-page panels */
+.localServicePage .localHero,
+.localServicePage .localContent,
+.localServicePage .localPhotoStrip,
+.localServicePage .localGridSection,
+.localServicePage .localJumpstart,
+.localServicePage .localFaq,
+.localServicePage .updatesCta {
+  width:min(1280px,calc(100% - 48px));
+  margin-right:auto;
+  margin-left:auto;
+}
+@media(max-width:900px) {
+  .localServicePage .localHero,
+  .localServicePage .localContent,
+  .localServicePage .localPhotoStrip,
+  .localServicePage .localGridSection,
+  .localServicePage .localJumpstart,
+  .localServicePage .localFaq,
+  .localServicePage .updatesCta {
+    width:calc(100% - 24px);
+  }
+}

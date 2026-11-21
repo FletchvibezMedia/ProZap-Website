@@ -7,7 +7,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {url: base, lastModified: new Date("2026-11-20"), changeFrequency: "weekly" as const, priority: 1},
-    {url: `${base}/mobile-ev-charging-orlando`, lastModified: new Date("2026-11-20"), changeFrequency: "monthly" as const, priority: 0.9},
+    {url: `${base}/mobile-ev-charging-orlando`, lastModified: new Date("2026-11-21"), changeFrequency: "monthly" as const, priority: 0.9},
+    {url: `${base}/emergency-ev-charging-orlando`, lastModified: new Date("2026-11-21"), changeFrequency: "monthly" as const, priority: 0.9},
     {url: `${base}/emergency-ev-charging`, lastModified: new Date("2026-11-20"), changeFrequency: "monthly" as const, priority: 0.9},
     {url: `${base}/ev-emergency-guide`, lastModified: new Date("2026-11-20"), changeFrequency: "monthly" as const, priority: 0.8},
     {url: `${base}/emergency-ev-charging-windermere-celebration`, lastModified: new Date("2026-11-20"), changeFrequency: "monthly" as const, priority: 0.7},

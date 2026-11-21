@@ -6,7 +6,7 @@ const phone="407-686-2539",href="+14076862539";
 
 export const metadata:Metadata={
  title:"Mobile EV Charging Cost & Pricing in Orlando",
- description:"ProZap roadside EV charging starts with a $139 service call including 30 travel miles. See Orlando-area distance, charging and tax details.",
+ description:"Emergency EV charging includes a $139 service call with 30 travel miles. Compatible 12-volt jump-start assistance is $99. See Central Florida rates.",
  alternates:{canonical:"/pricing"},
  openGraph:{title:"Mobile EV Charging Pricing in Orlando | ProZap",description:"Transparent roadside EV charging prices, travel coverage and charging-session details.",url:"/pricing"}
 };

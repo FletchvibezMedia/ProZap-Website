@@ -6,7 +6,7 @@ export const metadata:Metadata={
  title:"Emergency EV Charging Orlando | Mobile Roadside Help",
  description:"Need emergency EV charging in Orlando? ProZap brings mobile DC fast charging to stranded EVs across Greater Orlando. 24/7 dispatch line; availability and ETA confirmed by dispatch.",
  alternates:{canonical:"/mobile-ev-charging-orlando"},
- openGraph:{title:"Mobile EV Charging in Orlando | ProZap",description:"On-demand roadside charging for Tesla and other electric vehicles across Central Florida.",url:"/mobile-ev-charging-orlando"}
+ openGraph:{title:"Emergency EV Charging in Orlando | ProZap",description:"24/7 dispatch line for mobile roadside EV charging in Orlando and Central Florida; service availability and ETA confirmed per call.",url:"/mobile-ev-charging-orlando"}
 };
 
 const coreCities=["Orlando","Winter Park","Maitland","Altamonte Springs","Ocoee","Winter Garden","Windermere","Lake Nona"];

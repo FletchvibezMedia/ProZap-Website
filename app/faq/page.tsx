@@ -1,7 +1,7 @@
 import type {Metadata} from "next";
 import {ArrowLeft,BatteryCharging,ChevronRight,Phone,Zap} from "lucide-react";
 
-export const metadata:Metadata={title:"Mobile EV Charging FAQ | Orlando & Central Florida",description:"Answers about emergency EV charging, Tesla compatibility, charging time, roadside pricing, safety and ProZap's Orlando service area.",alternates:{canonical:"/faq"},openGraph:{title:"Mobile EV Charging FAQ | ProZap",description:"Straight answers about roadside EV charging, compatibility, cost and coverage in Central Florida.",url:"/faq"}};
+export const metadata:Metadata={title:"Emergency EV Charging FAQ | Orlando & Central Florida",description:"Answers about emergency EV charging, ProZap’s 24/7 dispatch line, Tesla compatibility, charging time, roadside pricing, safety and service availability.",alternates:{canonical:"/faq"},openGraph:{title:"Emergency EV Charging FAQ | ProZap",description:"Straight answers about emergency roadside EV charging, 24/7 dispatch, compatibility, cost and Central Florida coverage.",url:"/faq"}};
 
 const faqs=[
  ["What is mobile EV charging?","Mobile EV charging brings charging equipment directly to a stranded electric vehicle. ProZap arrives in a purpose-built service van and provides a roadside battery boost so you can reach your destination or a permanent charging station without arranging a traditional tow."],
@@ -14,7 +14,7 @@ const faqs=[
  ["Can you charge my EV at home or work?","Yes, mobile service may be available at homes, workplaces, parking lots, and other accessible locations—not only on the roadside. The vehicle must be parked somewhere the service van can reach safely."],
  ["Is roadside charging safe?","The equipment is designed for mobile EV charging, but every location is evaluated for safe access. Tell dispatch about traffic, parking garages, gated entrances, damaged vehicles, standing water, or other hazards before service."],
  ["Are ProZap technicians certified?","ProZap uses specialized mobile EV charging equipment and follows applicable equipment and roadside safety procedures. Ask dispatch for the company’s current training, certification, and insurance details before service."],
- ["Do you operate 24 hours a day?","Hours and same-day availability can vary. Call or send a service request to confirm whether a charging van is available and receive an estimated arrival time."],
+ ["Is ProZap’s emergency dispatch line open 24/7?","Yes. The emergency dispatch line is open 24/7. For each request, dispatch confirms current technician availability, vehicle compatibility, safe access, estimated arrival and pricing. A 24/7 line does not guarantee an immediate technician dispatch."],
  ["What information should I send to dispatch?","Include your exact location, vehicle year and model, remaining battery percentage, charging-port type if known, and any access instructions such as a gate code or parking-garage level."],
  ["Can ProZap help fleets, dealerships, and businesses?","Mobile EV charging may also support fleets, dealerships, property managers, events, and businesses that need flexible charging assistance. Contact ProZap to discuss recurring or on-site service needs."]
 ];

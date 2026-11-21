@@ -14,15 +14,15 @@ const siteUrl="https://prozapev.com";
 
 export const metadata:Metadata={
  metadataBase:new URL(siteUrl),
- title:{default:"Emergency EV Charging Orlando | ProZap Mobile Roadside Help",template:"%s | ProZap"},
- description:"Need emergency EV charging in Orlando? ProZap brings mobile DC fast charging and compatible 12-volt roadside assistance across Central Florida. 24/7 dispatch line.",
+ title:{default:"24/7 Emergency EV Charging Orlando | ProZap",template:"%s | ProZap"},
+ description:"Need emergency EV charging in Orlando? Call ProZap’s 24/7 dispatch line for mobile DC fast charging and compatible 12-volt roadside assistance. Technician availability, access, compatibility, ETA and pricing are confirmed for each request.",
  applicationName:"ProZap Mobile EV Charging",
  category:"automotive",
  keywords:["emergency EV charging Orlando","emergency EV charging near me","mobile EV charging Orlando","roadside EV charging","Tesla roadside charging Orlando","dead electric car battery help","electric car roadside assistance","12V EV jump start Orlando","mobile DC fast charging","Central Florida EV charging"],
  alternates:{canonical:"/"},
  robots:{index:true,follow:true,googleBot:{index:true,follow:true,"max-image-preview":"large","max-snippet":-1,"max-video-preview":-1}},
- openGraph:{type:"website",locale:"en_US",siteName:"ProZap Mobile EV Charging",title:"Emergency EV Charging in Orlando | ProZap",description:"Stranded with a dead EV battery? ProZap brings mobile DC fast charging and compatible 12-volt assistance to Central Florida. 24/7 dispatch line.",url:siteUrl,images:[{url:"/prozap-fleet-banner.png",width:1672,height:941,alt:"ProZap mobile EV charging van assisting an electric vehicle in Central Florida"}]},
- twitter:{card:"summary_large_image",title:"Emergency EV Charging in Orlando | ProZap",description:"Roadside DC fast charging and compatible 12-volt assistance for Tesla and other EVs across Central Florida.",images:["/prozap-fleet-banner.png"]},
+ openGraph:{type:"website",locale:"en_US",siteName:"ProZap Mobile EV Charging",title:"24/7 Emergency EV Charging in Orlando | ProZap",description:"Stranded with a dead EV battery? Call ProZap’s 24/7 dispatch line for mobile charging and compatible 12-volt roadside assistance. Availability is confirmed for each request.",url:siteUrl,images:[{url:"/prozap-fleet-banner.png",width:1672,height:941,alt:"ProZap mobile EV charging van assisting an electric vehicle in Central Florida"}]},
+ twitter:{card:"summary_large_image",title:"24/7 Emergency EV Charging in Orlando | ProZap",description:"Roadside DC fast charging and compatible 12-volt assistance for Tesla and other EVs across Central Florida. 24/7 dispatch; availability confirmed per request.",images:["/prozap-fleet-banner.png"]},
  icons:{icon:"/favicon.svg",shortcut:"/favicon.svg",apple:"/prozap-logo.png"},
  manifest:"/manifest.webmanifest"
 };

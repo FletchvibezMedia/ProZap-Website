@@ -478,3 +478,6 @@ header .call,.button.primary{clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px
 .serviceAreaDropdown>div a:hover{color:#fff;background:rgba(201,255,19,.1)}
 .homePage header nav .serviceAreaDropdown>div a{text-align:left}
 @media(max-width:800px){.homePage header nav.open .serviceAreaDropdown{width:100%;display:flex;flex-direction:column;align-items:center;gap:12px}.homePage header nav.open .serviceAreaDropdown>summary{padding:0!important;font-size:.8rem;letter-spacing:.06em}.homePage header nav.open .serviceAreaDropdown>div{position:static;transform:none;width:min(100%,320px);min-width:0;justify-items:stretch;margin-top:0;background:rgba(7,12,13,.96);box-shadow:none}.homePage header nav.open .serviceAreaDropdown>div a{justify-content:center}}
+
+/* Keep the expanded mobile navigation anchored below the header instead of in flex flow. */
+@media(max-width:800px){.homePage header nav.open{position:absolute;top:calc(100% + 8px);left:0;right:0;width:auto;z-index:30;margin:0;padding:22px 18px}}
